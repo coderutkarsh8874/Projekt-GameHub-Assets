@@ -1,0 +1,66 @@
+
+
+
+/*---------------------------------------Cyberpunk card top---------------------------------------*/
+
+.cyberpunk_card {
+    position: relative;
+    top: 100px;
+    width: 300px;
+    left: 100px;
+    height: 169px;
+    border: 1px solid black;
+    background-image: url(cyberpunk\ asset3.jpg);
+    background-size: contain;
+    filter: grayscale(100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .cyberpunk_card:hover {
+    background-blend-mode: difference;
+    border: none;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 0 20px 36px rgba(255, 234, 0, 0.544);
+  }
+  
+  .cyberpunk_card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .cyberpunk_card:hover .cyberpunk_card__content {
+    transform: rotateX(0deg);
+   
+  }
+  .cyberpunk_card:hover svg {
+    scale: 0;
+  }
+  
+  .cyberpunk_card__description {
+    font-family: Refinery-25, sans-serif;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ff0101a8;
+    line-height: 1.4;
+  }
+
+  
+/*---------------------------------------Cyberpunk card bottom---------------------------------------*/
